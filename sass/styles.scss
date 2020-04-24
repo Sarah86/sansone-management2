@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$dark-black: hsl(0, 0%, 21%);
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $dark-black;
+$link: $brown;
+$text-strong: $dark-black;
+$fullhd-enabled: true;
+$column-gap: 0.15em;
+$radius: 0;
+$title-family: "industry";
+$title-size: 2.25rem;
+$title-weight: 500;
+$subtitle-color: $text-strong;
+$subtitle-family: "industry";
+$subtitle-size: .9rem;
+$subtitle-weight: 500;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+/*Own variables*/
+
+$letter-spacing-1: -0.1rem;
+
+/*Own Styles*/
+
+.title {
+    letter-spacing: $letter-spacing-1;
+}
+
+.divider {
+    border-radius: 30px;
+    width: 20px;
+    height: 2px;
+    background-color: $primary;
+    margin: 0 auto;
+}
+
+.has-image-centered {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.projetos {
+    padding-left: 0;
+    padding-right: 0;
+    .card {
+    background-size: cover;
+    background-position: center;
+    }
+    .base.card{
+        background-image: url("/img/capa-projeto---base-ref.jpg");
+    }
+    .bbt.card{
+        background-image: url("/img/capa-projeto---bbt-ref.jpg");
+    }
+    .cop.card{
+        background-image: url("/img/capa-projeto---cop-ref.jpg");
+    }
+    .w2c.card{
+        background-image: url("/img/capa-projeto---w2c-ref.jpg");
+    }
+    .xldr.card{
+        background-image: url("/img/capa-projeto---xldr-ref.jpg");
+    }
+    .card-content {
+        min-height: 12em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}

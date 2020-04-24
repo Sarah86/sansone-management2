@@ -1,0 +1,22 @@
+{
+  "name": "sansone-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Sarah Goncalves",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "node-sass": "^4.13.1"
+  }
+}
